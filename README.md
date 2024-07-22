@@ -52,47 +52,48 @@ PlayerController Endpoints
    Method: GET
    Description: Displays the form to pick top players.
    Requires Authentication: No
-   GET /getTop11
    
+   GET /getTop11 
    URL: http://localhost:8080/getTop11
    Method: GET
    Description: Lists the top 11 players based on the specified criteria (ODI, T20, Test).
    Requires Authentication: No
-   GET /updatePlayer
    
+   GET /updatePlayer   
    URL: http://localhost:8080/updatePlayer
    Method: GET
    Description: Displays the form to update a player's details.
    Requires Authentication: Yes
-   POST /updatePlayer
    
+   POST /updatePlayer   
    URL: http://localhost:8080/updatePlayer
    Method: POST
    Description: Updates a player's details based on the specified type (age, department).
    Requires Authentication: Yes
+
+
    
 AdminLoginController Endpoints
 
-GET /
-
-URL: http://localhost:8080/
-Method: GET
-Description: Displays the login page.
-POST /
-
-URL: http://localhost:8080/
-Method: POST
-Description: Processes the admin login.
-Requires Authentication: No (for the login process itself)
-GET /index
-
-URL: http://localhost:8080/index
-Method: GET
-Description: Displays the index page after successful login.
-Requires Authentication: Yes
-GET /logout
-
-URL: http://localhost:8080/logout
-Method: GET
-Description: Logs out the admin and invalidates the session.
-Requires Authentication: No (ends the session
+   GET /
+   URL: http://localhost:8080/
+   Method: GET
+   Description: Displays the login page.
+   
+   POST /
+   URL: http://localhost:8080/
+   Method: POST
+   Description: Processes the admin login.
+   Requires Authentication: No (for the login process itself)
+   
+   GET /index
+   URL: http://localhost:8080/index
+   Method: GET
+   Description: Displays the index page after successful login.
+   Requires Authentication: Yes
+   
+   GET /logout
+   URL: http://localhost:8080/logout
+   Method: GET
+   Description: Logs out the admin and invalidates the session.
+   Requires Authentication: No (ends the session
