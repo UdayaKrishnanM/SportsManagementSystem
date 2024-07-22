@@ -16,7 +16,6 @@ public class Admin {
 	private Long id;
 	private String username;
 	private String password;
-	private String roles = "ROLE_ADMIN";
 	
 	@Override
 	public String toString() {
@@ -28,12 +27,10 @@ public class Admin {
 		this.id = id;
 		this.username = username;
 		this.password = password;
-//		this.roles = roles;
 	}
 
 	public Admin() {
 		super();
 	}
 	 
- 
 }
