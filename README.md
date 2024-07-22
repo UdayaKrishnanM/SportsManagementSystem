@@ -11,9 +11,11 @@ I have used entities Admin, Player, Ranks. Since RANK is a reserved keyword in M
 
     2.1 Create a Database on your wish (`spring.datasource.url=jdbc:mysql://localhost:PORT_NUMBER/DBname`)
    
-   2.2 Change username and password (`spring.datasource.username= USERNAME`), (`spring.datasource.password= PASSWORD`)
+    2.2 Change username and password (`spring.datasource.username= USERNAME`), (`spring.datasource.password= PASSWORD`)
 
-3. Open terminal and enter this command (`./mvnw spring-boot:run`)
+    2.3 Check out the PlayerDetails file in root folder. You can use that to upload in database for Player and Ranks table.
+
+4. Open terminal and enter this command (`./mvnw spring-boot:run`)
 
 
 `ENDPOINTS:`
