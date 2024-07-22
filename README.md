@@ -1,6 +1,6 @@
 Hello I have developed this called **Sports Management System** using **Spring Boot, Spring JPA, MySQL, JSP.**
 
-This project is based on CRUD operations like adding, deleting, updating and reading the player's details and added one more functionality called listing T20, Test and ODI format top 11 players according to their ranks in each format.
+This Spring Boot project is a sports management system designed to handle player information and administrative tasks. It features endpoints for adding, updating, listing, and deleting player records, with validation for player details like age and ranking. The application supports authentication for admin users, ensuring secure access to player management functionalities. Admins can log in, view a dashboard, and manage players' data through various forms and actions. The system also includes functionalities to select and display top players based on different criteria, such as ODI, T20, and Test formats. The project uses JSP for front-end views and leverages Spring Security for authentication and authorization.
 
 I have used entities Admin, Player, Ranks. Since RANK is a reserved keyword in MySQL we cant use it so we use RANKS. Player entity has player name, age, department. Ranks entity has each player's rank in each format (T20, Test, ODI).
 
