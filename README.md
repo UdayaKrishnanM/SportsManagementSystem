@@ -2,7 +2,7 @@ Hello I have developed this called **Sports Management System** using **Spring B
 
 This project is based on CRUD operations like adding, deleting, updating and reading the player's details and added one more functionality called listing T20, Test and ODI format top 11 players according to their ranks in each format.
 
-I have used entities Admin, Player, Ranks. Since RANK is re
+I have used entities Admin, Player, Ranks. Since RANK is a reserved keyword in MySQL we cant use it so we use RANKS. Player entity has player name, age, department.
 
 Steps to run the project:
 1. Download the zip file and extract the file. Open in either VS Code or Eclipse or IntelliJ.
