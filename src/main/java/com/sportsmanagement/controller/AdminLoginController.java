@@ -54,45 +54,5 @@ public class AdminLoginController {
 		return "redirect:/";
 	}
 
-
-
-
-
-
-
-
-//	@PostMapping("/index")
-//	public String saveadmin(Admin admin) {
-//		adminrepo.save(admin);
-//		return "redirect:/index";
-//	}
-
-
-	// old methods
-//	@GetMapping("/index")
-//	public String  adminlogger(){
-//		return "index";
-//	}
-//
-//
-//	@PostMapping("/")
-//	public String login(Admin admin, RedirectAttributes redirectAttributes) {
-//		Admin user = adminrepo.getById(admin.getId());
-//		if (user.getId().equals(admin.getId()) && user.getPassword().equals(admin.getPassword())) {
-//			return "redirect:/index";
-//		} else {
-//			if (user.getId().equals(admin.getId()) && !user.getPassword().equals(admin.getPassword())) {
-//				redirectAttributes.addFlashAttribute("message", "Password wrong");
-//				return "redirect:/";
-//			}  else if(!user.getId().equals(admin.getId())){
-//				redirectAttributes.addFlashAttribute("message", "ID not found");
-//				return "redirect:/";
-//			} else {
-//				return "redirect:/";
-//			}
-//		}
-//	}
-
-
 }
 
