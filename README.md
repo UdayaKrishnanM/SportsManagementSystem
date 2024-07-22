@@ -5,7 +5,7 @@ This Spring Boot project is a sports management system designed to handle player
 I have used entities Admin, Player, Ranks. Since RANK is a reserved keyword in MySQL we cant use it so we use RANKS. Player entity has player name, age, department. Ranks entity has each player's rank in each format (T20, Test, ODI).
 
 
-`Steps to run the project:`
+`STEPS TO RUN THE PROJECT:`
 1. Download the zip file and extract the file. Open in either VS Code or Eclipse or IntelliJ.
 2. navigate to `src/main/resources/application.properties`.
 
