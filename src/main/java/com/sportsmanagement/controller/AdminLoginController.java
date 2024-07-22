@@ -1,0 +1,98 @@
+package com.sportsmanagement.controller;
+
+import java.util.Optional;
+
+import jakarta.servlet.http.HttpSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.sportsmanagement.dao.AdminRepository;
+import com.sportsmanagement.model.Admin;
+
+@Controller
+public class AdminLoginController {
+
+	@Autowired
+	private AdminRepository adminrepo;
+
+	@GetMapping("/")
+    public String adminlog() {
+        return "login";
+    }
+	@PostMapping("/")
+	public String login(@RequestParam("id") Long id, @RequestParam("password") String password,
+						HttpSession session, RedirectAttributes redirectAttributes) {
+		Admin admin = adminrepo.findById(id).orElse(null);
+		if (admin != null && admin.getPassword().equals(password)) {
+			session.setAttribute("authenticated", true);
+			return "redirect:/index";
+		} else if(admin !=null && admin.getId().equals(id) && !admin.getPassword().equals(password)){
+			redirectAttributes.addFlashAttribute("message", "Incorrect Password");
+			return "redirect:/";
+		} else{
+			redirectAttributes.addFlashAttribute("message", "Invalid ID");
+			return "redirect:/";
+		}
+	}
+
+	@GetMapping("/index")
+	public String adminlogger(HttpSession session) {
+		if (session.getAttribute("authenticated") == null || !(Boolean) session.getAttribute("authenticated")) {
+			return "redirect:/";
+		}
+		return "index";
+	}
+
+	@GetMapping("/logout")
+	public String logout(HttpSession session) {
+		session.invalidate();
+		return "redirect:/";
+	}
+
+
+
+
+
+
+
+
+//	@PostMapping("/index")
+//	public String saveadmin(Admin admin) {
+//		adminrepo.save(admin);
+//		return "redirect:/index";
+//	}
+
+
+	// old methods
+//	@GetMapping("/index")
+//	public String  adminlogger(){
+//		return "index";
+//	}
+//
+//
+//	@PostMapping("/")
+//	public String login(Admin admin, RedirectAttributes redirectAttributes) {
+//		Admin user = adminrepo.getById(admin.getId());
+//		if (user.getId().equals(admin.getId()) && user.getPassword().equals(admin.getPassword())) {
+//			return "redirect:/index";
+//		} else {
+//			if (user.getId().equals(admin.getId()) && !user.getPassword().equals(admin.getPassword())) {
+//				redirectAttributes.addFlashAttribute("message", "Password wrong");
+//				return "redirect:/";
+//			}  else if(!user.getId().equals(admin.getId())){
+//				redirectAttributes.addFlashAttribute("message", "ID not found");
+//				return "redirect:/";
+//			} else {
+//				return "redirect:/";
+//			}
+//		}
+//	}
+
+
+}
+

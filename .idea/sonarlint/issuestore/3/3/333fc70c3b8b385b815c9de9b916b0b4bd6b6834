@@ -1,0 +1,13 @@
+
+k
+java:S1192 "NDefine a constant instead of duplicating this literal "authenticated" 3 times.(Ú˜ú’8¹›Ù2
+h
+java:S1192$"KDefine a constant instead of duplicating this literal "redirect:/" 4 times.(äÔ¶½8¹›Ù2
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8é¹›Ù2
+]	java:S125A"<This block of commented-out lines of code should be removed.(Ïµù²şÿÿÿÿ8”º›Ù2
+X	java:S125I"<This block of commented-out lines of code should be removed.(ñéÓå8•º›Ù2
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8šº›Ù2
+^
+java:S1128"<Remove this unused import 'org.springframework.ui.ModelMap'.(ÊÁâºùÿÿÿÿ8šº›Ù2

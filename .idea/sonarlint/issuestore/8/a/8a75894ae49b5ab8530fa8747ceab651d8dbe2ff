@@ -1,0 +1,7 @@
+
+[
+java:S1874 "9Remove this use of "authorizeRequests"; it is deprecated.(Ê•š¹şÿÿÿÿ8 ¹²Õ2
+
+java:S1128"_Remove this unused import 'org.springframework.security.authentication.AuthenticationProvider'.(±­¼üÿÿÿÿ8‰òÊÕ2
+ˆ
+java:S1128"fRemove this unused import 'org.springframework.security.authentication.dao.DaoAuthenticationProvider'.(Ã‚öşÿÿÿÿ8‰òÊÕ2

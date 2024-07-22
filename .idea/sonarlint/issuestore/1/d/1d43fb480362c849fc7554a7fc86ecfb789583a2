@@ -1,0 +1,33 @@
+
+j
+java:S1192"HDefine a constant instead of duplicating this literal "Batsmen" 3 times.(şÒì½ıÿÿÿÿ8åªïÕ2
+l
+java:S1192)"ODefine a constant instead of duplicating this literal "authenticated" 12 times.(‘ı‹½8êÈñÕ2
+k
+java:S1192€"MDefine a constant instead of duplicating this literal "WicketKeeper" 3 times.(†ˆí8æªïÕ2
+v
+java:S11926"TDefine a constant instead of duplicating this literal "redirect:/addPlayer" 7 times.(´÷˜¼üÿÿÿÿ8çªïÕ2
+h
+java:S1192*"KDefine a constant instead of duplicating this literal "redirect:/" 6 times.(äÔ¶½8¢™ôÕ2
+e
+java:S1192‚"GDefine a constant instead of duplicating this literal "Bowler" 3 times.(Õß±ò8éªïÕ2
+t
+java:S1192£"WDefine a constant instead of duplicating this literal "redirect:/updatePlayer" 4 times.(°×‘a8êªïÕ2
+i
+java:S1192"KDefine a constant instead of duplicating this literal "AllRounder" 3 times.(·…á·8ëªïÕ2
+f
+java:S11925"IDefine a constant instead of duplicating this literal "message" 12 times.(¼È³á8ôªïÕ2
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğÕˆ¡2
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğÕˆ¡2
+^	java:S125Ç"<This block of commented-out lines of code should be removed.(¥°˜’ıÿÿÿÿ8›¬ïÕ2
+b
+java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8»ËôÕ2
+f
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8»ËôÕ2
+[
+java:S1128	"9Remove this unused import 'org.springframework.ui.Model'.(ê†ıÿÿÿÿ8»ËôÕ2
+^
+java:S1128
+"<Remove this unused import 'org.springframework.ui.ModelMap'.(ÊÁâºùÿÿÿÿ8»ËôÕ2
