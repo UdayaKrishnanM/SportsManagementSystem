@@ -18,7 +18,7 @@ ENDPOINTS:
 PlayerController Endpoints
    
    GET /addPlayer
-   URL: http://localhost:8080/addPlayer
+   URL: `http://localhost:8080/addPlayer`
    Method: GET
    Description: Displays the form to add a new player.
    Requires Authentication: Yes
