@@ -5,6 +5,7 @@ This Spring Boot project is a sports management system designed to handle player
 I have used entities Admin, Player, Ranks. Since RANK is a reserved keyword in MySQL we cant use it so we use RANKS. Player entity has player name, age, department. Ranks entity has each player's rank in each format (T20, Test, ODI).
 
 
+
 `STEPS TO RUN THE PROJECT:`
 1. Download the zip file and extract the file. Open in either VS Code or Eclipse or IntelliJ.
 2. navigate to `src/main/resources/application.properties`.
@@ -16,6 +17,8 @@ I have used entities Admin, Player, Ranks. Since RANK is a reserved keyword in M
     2.3 Check out the PlayerDetails file in root folder. You can use that to upload in database for Player and Ranks table.
 
 4. Open terminal and enter this command (`./mvnw spring-boot:run`)
+
+
 
 
 `ENDPOINTS:`
