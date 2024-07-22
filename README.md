@@ -14,62 +14,65 @@ Steps to run the project:
 
 
 ENDPOINTS:
+
 PlayerController Endpoints
-GET /addPlayer
-
-URL: http://localhost:8080/addPlayer
-Method: GET
-Description: Displays the form to add a new player.
-Requires Authentication: Yes
-POST /addPlayer
-
-URL: http://localhost:8080/addPlayer
-Method: POST
-Description: Adds a new player.
-Requires Authentication: Yes
-GET /listPlayers
-
-URL: http://localhost:8080/listPlayers
-Method: GET
-Description: Lists all players.
-Requires Authentication: No
-GET /deletePlayer
-
-URL: http://localhost:8080/deletePlayer
-Method: GET
-Description: Displays the form to delete a player.
-Requires Authentication: Yes
-POST /deletePlayer
-
-URL: http://localhost:8080/deletePlayer
-Method: POST
-Description: Deletes a player based on ID.
-Requires Authentication: Yes
-GET /pickTopPlayers
-
-URL: http://localhost:8080/pickTopPlayers
-Method: GET
-Description: Displays the form to pick top players.
-Requires Authentication: No
-GET /getTop11
-
-URL: http://localhost:8080/getTop11
-Method: GET
-Description: Lists the top 11 players based on the specified criteria (ODI, T20, Test).
-Requires Authentication: No
-GET /updatePlayer
-
-URL: http://localhost:8080/updatePlayer
-Method: GET
-Description: Displays the form to update a player's details.
-Requires Authentication: Yes
-POST /updatePlayer
-
-URL: http://localhost:8080/updatePlayer
-Method: POST
-Description: Updates a player's details based on the specified type (age, department).
-Requires Authentication: Yes
+   
+   GET /addPlayer
+   URL: http://localhost:8080/addPlayer
+   Method: GET
+   Description: Displays the form to add a new player.
+   Requires Authentication: Yes
+   
+   POST /addPlayer
+   URL: http://localhost:8080/addPlayer
+   Method: POST
+   Description: Adds a new player.
+   Requires Authentication: Yes
+   
+   GET /listPlayers
+   URL: http://localhost:8080/listPlayers
+   Method: GET
+   Description: Lists all players.
+   Requires Authentication: No
+   
+   GET /deletePlayer
+   URL: http://localhost:8080/deletePlayer
+   Method: GET
+   Description: Displays the form to delete a player.
+   Requires Authentication: Yes
+   
+   POST /deletePlayer
+   URL: http://localhost:8080/deletePlayer
+   Method: POST
+   Description: Deletes a player based on ID.
+   Requires Authentication: Yes
+   
+   GET /pickTopPlayers
+   URL: http://localhost:8080/pickTopPlayers
+   Method: GET
+   Description: Displays the form to pick top players.
+   Requires Authentication: No
+   GET /getTop11
+   
+   URL: http://localhost:8080/getTop11
+   Method: GET
+   Description: Lists the top 11 players based on the specified criteria (ODI, T20, Test).
+   Requires Authentication: No
+   GET /updatePlayer
+   
+   URL: http://localhost:8080/updatePlayer
+   Method: GET
+   Description: Displays the form to update a player's details.
+   Requires Authentication: Yes
+   POST /updatePlayer
+   
+   URL: http://localhost:8080/updatePlayer
+   Method: POST
+   Description: Updates a player's details based on the specified type (age, department).
+   Requires Authentication: Yes
+   
 AdminLoginController Endpoints
+
 GET /
 
 URL: http://localhost:8080/
