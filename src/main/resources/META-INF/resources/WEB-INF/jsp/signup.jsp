@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login Page</title>
+    <title>Sign Up Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
 body {
@@ -151,15 +151,22 @@ label {
 
                 <div class="col-lg-12 login-form">
                     <div class="col-lg-12 login-form">
-                        <form action="/" method="post">
+                        <form action="/signup" method="post">
                             <div class="form-group">
-                         <label class="form-control-label" for="id">Enter the ID number:</label>
-                         <input type="text" class="form-control" id="id" name="id" pattern="\d*" inputmode="numeric" required>
-
+                                <label class="form-control-label">Enter ID number:</label>
+                                <input type="text" class="form-control" id="id" name="id" pattern="\d*" inputmode="numeric" required>
                             </div>
                             <div class="form-group">
-                                <label class="form-control-label">Password</label>
+                                <label class="form-control-label">Enter Username:</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Enter your Password</label>
                                 <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Reenter your Password</label>
+                                <input type="password" class="form-control" id="checkpassword" name="checkpassword" required>
                             </div>
 
                             <div class="col-lg-12 loginbttm">
@@ -169,9 +176,8 @@ label {
                                     <% } %>
                                 </div>
                                 <div class="col-lg-6 login-btm login-button">
-                                    <a href="signup" class="btn btn-outline-primary">REGISTER</a>
-
-                                    <button type="submit" class="btn btn-outline-primary">LOGIN</button>
+                                    <a href="/" class="btn btn-outline-primary">LOGIN</a>
+                                    <button type="submit" class="btn btn-outline-primary">REGISTER</button>
                                 </div>
                             </div>
                         </form>
