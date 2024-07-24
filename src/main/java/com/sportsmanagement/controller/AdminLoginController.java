@@ -47,6 +47,30 @@ public class AdminLoginController {
 		}
 		return "index";
 	}
+    @GetMapping("/signup")
+    public String signUpPage(){
+        return "signup";
+    }
+
+    @PostMapping("signup")
+    public String createAccount(@RequestParam("checkpassword") String enterPassword, Admin admin, RedirectAttributes redirectAttributes){
+        Optional<Admin> userAccount= adminrepo.findById(admin.getId());
+        if(userAccount.isEmpty()){
+			if(!admin.getUsername().matches("[a-zA-Z ]+")){
+				redirectAttributes.addFlashAttribute("message", "Name must contain only letters");
+				return "redirect:/signup";
+			} else if(admin.getPassword().equals(enterPassword)){
+                adminrepo.save(admin);
+                redirectAttributes.addFlashAttribute("message", "Account created successfully");
+                return "redirect:/";
+            } else{
+                redirectAttributes.addFlashAttribute("message", "Check password!!!");
+            }
+        } else{
+            redirectAttributes.addFlashAttribute("message", "Account already exists!!!");
+        }
+        return "redirect:/signup";
+    }
 
 	@GetMapping("/logout")
 	public String logout(HttpSession session) {
