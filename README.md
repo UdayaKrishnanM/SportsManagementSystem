@@ -107,4 +107,5 @@ AdminLoginController Endpoints
    URL: `http://localhost:8080/logout`
    Method: GET
    Description: Logs out the admin and invalidates the session.
-   Requires Authentication: No (ends the session
+   Requires Authentication: No (ends the session)
+   
